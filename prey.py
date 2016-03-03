@@ -22,26 +22,21 @@ X= range(101)
 for i in range (101):
    Y1= Y0 + Delta*((Ky*Y0)-(Kxy*X0*Y0))
    Y0= Y1
-   Y[i]= Y1
-   t[i]=i
-
-print Y
-
-
-for i in range (101):
    X1= X0 + Delta*((Kyx*Y0*X0)-(Kx*X0))
    X0= X1
+   Y[i]= Y1
    X[i]= X1
-   t[i]=i
+   t[i]=i*0.1
 
-print X
 
-tnew=numpy.array(t)
 Ynew=numpy.array(Y)
+Xnew=numpy.array(X)
+tnew=numpy.array(t)
 
-print tnew
 print Ynew
-
+print Xnew
+print tnew
 
 matplotlib.pyplot.plot(tnew, Ynew)
+matplotlib.pyplot.plot(tnew, Xnew)
 matplotlib.pyplot.show()

@@ -1,17 +1,9 @@
-<<<<<<< HEAD
 import numpy 
-=======
-import numpy
->>>>>>> f412429a53e9c42c64ef757ee9d1f3f051c14927
 import matplotlib
 import matplotlib.pyplot
 
 #Creado el 1 de Marzo de 2016
-<<<<<<< HEAD
 #Autora: Yurani Palacios 
-=======
-#Autora: Yurani Palacios
->>>>>>> f412429a53e9c42c64ef757ee9d1f3f051c14927
 
 # Relacion de crecimiento depredador y presa
 
@@ -36,31 +28,21 @@ for i in range (101):
    X[i]= X1
    t[i]=i*0.1
 
-<<<<<<< HEAD
-=======
 
->>>>>>> f412429a53e9c42c64ef757ee9d1f3f051c14927
 Ynew=numpy.array(Y)
 Xnew=numpy.array(X)
 tnew=numpy.array(t)
 
-<<<<<<< HEAD
 
 print Ynew
 print Xnew
 print tnew
  
-=======
-print Ynew
-print Xnew
-print tnew
->>>>>>> f412429a53e9c42c64ef757ee9d1f3f051c14927
 
 matplotlib.pyplot.plot(tnew, Ynew)
 matplotlib.pyplot.plot(tnew, Xnew)
 matplotlib.pyplot.show()
 
-<<<<<<< HEAD
 matplotlib.pyplot.plot(tnew, Xnew)
 matplotlib.pyplot.plot(tnew, Ynew)
 matplotlib.pyplot.show()
@@ -69,10 +51,3 @@ matplotlib.pyplot.plot(Ynew, Xnew)
 matplotlib.pyplot.plot(Xnew, Ynew)
 matplotlib.pyplot.show()
 
-
-
-=======
-matplotlib.pyplot.plot(Ynew, Xnew)
-matplotlib.pyplot.plot(Xnew, Ynew)
-matplotlib.pyplot.show()
->>>>>>> f412429a53e9c42c64ef757ee9d1f3f051c14927

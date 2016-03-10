@@ -12,8 +12,7 @@ def mcd (x,y):
         if x%i==0 and y%i==0:
            return i 
 #18 febrero 
-#La funcion devuelve 1 si los argumentos son coprimos. o en el otro caso 
-
+#La funcion devulve 1 si los argumentos son coprimos. o en el otro caso 
 
 def arecoprime (a,b):
     m=mcd(a,b)

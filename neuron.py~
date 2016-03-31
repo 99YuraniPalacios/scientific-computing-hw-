@@ -1,3 +1,5 @@
+
+		
 # Creado el 29 de Marzo de 2016
 # Autora: Yurani Melisa Palacios
 
@@ -28,47 +30,3 @@ gL = 0.3
 VL = -54.4
 
 V1 = (I - gk ** (n ** 4) * (V - Vk) - gNa ** ((m**3) * h) * (V - VNa) - gL(V - VL)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

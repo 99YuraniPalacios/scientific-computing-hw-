@@ -1,9 +1,10 @@
 import numpy
 import matplotlib
 import matplotlib.pyplot
+
 # crear las funciones basicas para evaluar el mapa logistico
 # Creado: 4-Febrero-2016
-# Autor: Eilin Luna
+# Autora: Yurani Palacios 
 
 t=range(50)
 y=range(50)
@@ -16,9 +17,12 @@ for i in range(50):
 	y[i]=y1
 	t[i]=i
 print y
+
 ynew=numpy.array(y)
 tnew=numpy.array(t)
+
 print ynew
 print tnew 
+
 matplotlib.pyplot.plot(tnew,ynew)
 matplotlib.pyplot.show()

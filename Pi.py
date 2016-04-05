@@ -13,10 +13,8 @@ import matplotlib.pyplot as plt
 # Problem 1
 # Firs we will get familiar with the use of random numbers. Evaluate the statement " print numpy.random.random()"
 # a few times and explain the result 
-# print numpy.random.random()
 
-for i in range (10):
-	print np.random.random()
+print np.random.random()
 
 
 # Problem 2 
@@ -34,7 +32,15 @@ print np.random.random()
 R= 1
 L= 3
 
-def 
+def pi  ():
+	
+
+np.sqrt (X**2 + Y**2) < R
+
+
+for i in range (10):
+	print np.random.random()
+
 
 
 

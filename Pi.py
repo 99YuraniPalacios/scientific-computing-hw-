@@ -28,27 +28,30 @@ print np.random.random()
 # us ussume that R=1 and choose a box og length L=3
 # Now imagine you throw N darts that randomly hit the square. It is easy to realize that if n is the number of 
 # darts that fall inside the circle, then ... 
-
+# from which we can get the value of pi. Create a funtion that finds the value of pi using this method. Use 
+# N= 100.1000.10000
 R= 1
 L= 3
 
 def fpi (L,R,N):
-	x= np.linspace(0,1 num=N)
-	y= np.zeros(lent(x))
+	x= np.linspace(0,1, num= N, endpoint= 'true')
+	y= np.zeros(len(x))
 	n= 0
-	for i in range (lent(x):
-		x[i]= L/2 - np.random.random()* L
+	for i in range (len(x)):
+		x[i]= L/2 - np.random.random()* 3
 		y[i]= np.random.uniform(-1.5, 1.5)
 		
 		if (np.sqrt(x[i]**2 + y[i]**2))<=R:
 			n= n+1
-
-	pi = ((L/R)**2)*((n/float(N))	
-	print pi
+	
+	pi=((L/R)**2)*((n/float(N)))	
+	print  pi
 	plt.plot(x,y)
 	plt.show()
+
+fpi (3, 1, 10000)
 	
-1.5- np.random.random()*3
+
 
 
 

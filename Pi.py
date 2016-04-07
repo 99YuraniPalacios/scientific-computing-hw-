@@ -32,14 +32,24 @@ print np.random.random()
 R= 1
 L= 3
 
-def pi  ():
+def fpi (L,R,N):
+	x= np.linspace(0,1 num=N)
+	y= np.zeros(lent(x))
+	n= 0
+	for i in range (lent(x):
+		x[i]= L/2 - np.random.random()* L
+		y[i]= np.random.uniform(-1.5, 1.5)
+		
+		if (np.sqrt(x[i]**2 + y[i]**2))<=R:
+			n= n+1
+
+	pi = ((L/R)**2)*((n/float(N))	
+	print pi
+	plt.plot(x,y)
+	plt.show()
 	
+1.5- np.random.random()*3
 
-np.sqrt (X**2 + Y**2) < R
-
-
-for i in range (10):
-	print np.random.random()
 
 
 

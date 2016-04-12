@@ -7,3 +7,19 @@
 # is chosen using a fair-coin 
 
 
+import numpy as np
+import matplotlib 
+import matplotlib.pyplot as plt 
+
+def rwalk1d (N, P):
+	
+	s = 0
+	for i in range (N):
+		r = np.random.random()
+		if r > p 
+			s = s + 1
+		else 
+			s = s - 1
+	return s
+		
+

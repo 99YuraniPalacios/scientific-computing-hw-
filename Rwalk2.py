@@ -6,17 +6,6 @@ import matplotlib
 import matplotlib.pyplot as plt 
 
 
-def rwalk1d (N, P):
-	
-	s = 0
-	for i in range (N):
-		r = np.random.random()
-		if r > p 
-			s = s + 1
-		else 
-			s = s - 1
-	return s
-
 # Background 
 
 # In this ssesion we will complete our study of the 1D random walk and move on to applications in higher
@@ -28,26 +17,47 @@ def rwalk1d (N, P):
 #    coin is biased 
 # def rwalk1d(N, p) 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def rwalk1d (N, p):
+	
+	n = 0
+	for i in range (N):
+		r = np.random.random()
+		if r < p:
+			n = n + 1
+		else :
+			n = n - 1
+	return n
+		
 # 2. Run n random walks in one dimension and calculate the quantities ...
 #    use n= 100, N= 1000 and q= 0.5, 0.7, 0.2, what do you observe?
+
+n = 100
+N = 1000
+p= (0.5, 0.7, 0.2)
+
+suma = 0 
+
+for i in range ():
+	x[i] = rwalk1d (N, p)
+		suma = suma + x[i]
+
+Prom = suma/ float(N)
+print Prom 
+
+suma* = 0
+for j in range ():
+	resta [j] = (x[j] - prom) **2
+	suma* = suma* 
+
+
+
+
+
+
+
+
+
+
 
 
 # 3. Create an array h of n entries where the ith position is the number of times that the "drunk" i the 

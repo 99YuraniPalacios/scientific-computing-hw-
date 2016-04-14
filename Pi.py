@@ -32,6 +32,7 @@ print np.random.random()
 # N= 100.1000.10000
 R= 1
 L= 3
+N= 10000
 
 def fpi (L,R,N):
 	x= np.linspace(0,1, num= N, endpoint= 'true')
@@ -46,13 +47,53 @@ def fpi (L,R,N):
 	
 	pi=((L/R)**2)*((n/float(N)))	
 	print  pi
-	plt.plot(x,y)
-	plt.show()
-
+	
 fpi (3, 1, 10000)
 	
 
 
+#MODULO RANDOM EN PYTHON
+#######################################################################ut
+#Modulo Random #
+#El modulo random proporciona un generador de numeros aleatorios. #
+#######################################################################
+# RANDRANGE #
+# El numero aleatorio que nos devuelve tiene que estar dentro #
+# de un rango ingresado por nosotros. #
+# random.randrange([start,] stop [,step]) #
+# print random.randrange(10) #Numero aleatorio entre 0 y 9 #
+# print random.randrange(1, 12, 2) #Pueden ser (1, 3, 5, 7, 9, 11) #
+#######################################################################
+# RANDINT #
+# A diferencia de randrange, randint incluye al stop dentro del rango #
+# random.randint(a, b) #
+# print random.randint(0,5)#La salida va a ser: 0, 1, 2, 3, 4 o 5 #
+#######################################################################
+# CHOICE(secuencia) #
+# #Devuelve un elemento aleatorio de una secuencia no vacia. #
+# random.choice(["rojo", "negro", "verde"]) #
+# lista = [2, 190, False, "hola", "pelota", 123] #
+# random.choice(lista) #
+#######################################################################
+# RANDOM #
+# Devuelve un numero aleatorio de punto flotante entre 0.0 y 1.0 #
+# random.random() #
+# random.random() * 100 #Nos devuelve un numero de punto flotante #
+# entre 0.0 y 100.0 #
+#######################################################################
+# UNIFORM #
+# Devuelve un numero de punto flotante entre a y b: #
+# random.uniform(a, b) #
+# #random.uniform(1, 2) #Devuelve un numero aleatorio entre 1.0 y 2.0 #
+#######################################################################
+# SHUFFLE #
+# La funcion shuffle mezcla aleatoriamente el orden de los elementos. #
+#random.shuffle(a) #
+# a = [1, 2, 3, 4, 5] #
+# random.shuffle(a) #
+# print a #
+# [3, 2, 4, 5, 1] #
+#######################################################################
 
 
 

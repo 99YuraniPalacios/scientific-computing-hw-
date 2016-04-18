@@ -33,36 +33,43 @@ def rwalk1d (N, p):
 
 n = 100
 N = 1000
-p= (0.5, 0.7, 0.2)
+p = 0.2
 
-suma = 0 
+s = 0 
+r = 0
 
-for i in range ():
-	x[i] = rwalk1d (N, p)
-		suma = suma + x[i]
+for i in range (n):
+	x = rwalk1d (N, p)
+	s = s + x
 
-Prom = suma/ float(N)
-print Prom 
+	r = r + x**2
 
-suma* = 0
-for j in range ():
-	resta [j] = (x[j] - prom) **2
-	suma* = suma* 
+s = s/ float(N)
+r = r/ float(N)
 
+r = np.sqrt (r - s**2)
 
-
-
-
-
-
-
-
-
+print m, s
+	
+print N * (2 * p -1), np.sqrt (4 * N * p * (1 - p))
 
 
 # 3. Create an array h of n entries where the ith position is the number of times that the "drunk" i the 
 #    1D random walk ends up i meters away from the center (Warning: the final position of the walker can be 
 #    negative, whereas the position in the array cannot be smaller than 0.)
 
+N = 1000
+n = 1000
+p = 0.7
+
+x = np.arange (2 * N + 1) - N
+h = np.zeros (2 * N + 1)
+
+for i in range(n):
+	xf = rwalk1d (N, p) 
+	h [xf + N] += 1
 
 # 4. Plot h as a function of i. ¡¡ Explain !!
+
+plt.plot (x, h)
+plt.show()

@@ -49,7 +49,7 @@ r = r/ float(N)
 
 r = np.sqrt (r - s**2)
 
-print m, s
+print s, r
 	
 print N * (2 * p -1), np.sqrt (4 * N * p * (1 - p))
 
@@ -60,7 +60,7 @@ print N * (2 * p -1), np.sqrt (4 * N * p * (1 - p))
 
 N = 1000
 n = 1000
-p = 0.7
+p = 0.5
 
 x = np.arange (2 * N + 1) - N
 h = np.zeros (2 * N + 1)
@@ -69,7 +69,7 @@ for i in range(n):
 	xf = rwalk1d (N, p) 
 	h [xf + N] += 1
 
-# 4. Plot h as a function of i. ¡¡ Explain !!
+# 4. Plot h as a function of i.  Explain 
 
 plt.plot (x, h)
 plt.show()

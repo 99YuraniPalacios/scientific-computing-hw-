@@ -9,10 +9,10 @@ import matplotlib.pyplot as plt
 
 # Background 
  
-numpy.random.uniform(a, b)
-numpy.random.binomial(N, p)
-numpy.random.normal(mu, sigma)
-numpy.histogram(x, bins=<bins>)
+# numpy.random.uniform(a, b)
+# numpy.random.binomial(N, p)
+# numpy.random.normal(mu, sigma)
+# numpy.histogram(x, bins=<bins>)
 
 
 # Problem 1
@@ -33,7 +33,13 @@ x = 0
 
 def brownian(n):
 
+	walk = np.random.uniform (0.1, 200)
+	x = np.cumsum (walk)
+	x[0] = 0
+	t = range (n)
 
+plt.plot (x)
+plt.show()
 
 # Problem 3
 # At a given time t (iteration) calculate the distance to the center s. Calculate[s^2]

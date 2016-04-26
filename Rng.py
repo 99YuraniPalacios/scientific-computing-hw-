@@ -27,16 +27,20 @@ import matplotlib.pyplot as plt
 # brownian(n)
 # For the example use n = 200
 
+np.random.seed (0)
 n = 200 
 N = 0.1
 x = 0 
 
 def brownian(n):
 
-	walk = np.random.uniform (0.1, 200)
-	x = np.cumsum (walk)
-	x[0] = 0
-	t = range (n)
+	walk = np.random.normal (0.1, 200)
+	x = np.append (0, np.cumsum (walk))
+	x [0] = 0
+
+	return x
+
+x = brownian (200)
 
 plt.plot (x)
 plt.show()
@@ -45,7 +49,25 @@ plt.show()
 # At a given time t (iteration) calculate the distance to the center s. Calculate[s^2]
 # for N random walks an plot it as a function of t. Use N = 100
 
+N = 100
+n = 200
+
+y = np.zeros (n + 1)
+
+for i in range(N):
+	x  = brownian(n)
+	y = y + x**2
+
+y /= float (N)
+t = range (n + 1)
+
+
+plt.plot (t, y, 'r-')
+plt.show()
 
 # Problem 4
 # The diffusion coefficient D is defined such that ([s^2]=2Dt). 
 # Find D for this walk (hint: use the function scipy.stats.linregress) D = 0.61
+
+slope, intercept, r_value, p_value, std_err = scipy.stats.linregress (t, s2) 
+print 'Diffusion Coefficient D=', 0.5 * slope

@@ -40,22 +40,35 @@ def neighbor (solution):
 
 # 4. Start with a randomly selected solution in the range found in step 2. FixT = 1 and Tmin = 10^-5
 
-c = np.random.uniform (-3, 3)
+c = np.random.uniform (0, 2)
 T = 1
-Tmin = (10 ** -5)
+Tmin = (1 ** -5)
 
 # 5. Generate a new solution with the function neighbor
 
-for j in range (100):
-	c2 = neighbor(c)
+# for j in range (100):
+# 	c2 = neighbor(c)
 
 # 6. Decide which of the two solutions is the best one based on what we discussed earlier (See Eq. 1)
 
-for k in range (100):
-	Eq1 = ((c - c2) / T)
+# for k in range (100):
+#	Eq1 = ((c - c2) / T)
 
 # 7. Repeat steps 5 & 6 100 times
 
 # 8. Decrease T by a factor of 0.9, and repeat steps 5-7 until the temperature drops below Tmin 
+while T > Tmin :
+	for j in range (100):
+		c2 = neighbor(c)
 
+		u = random.uniform()
+		Eq1 = ((c - c2) / T)
 
+		if cost(c2)<cost(c):
+			c = c2
+		else :
+			if Eq1 > u:
+				c = Eq1		
+	T = fT * T
+print "Optimal solution :%f" %c
+print "Cost of optimal solution: %f" % Eq1

@@ -43,6 +43,7 @@ def neighbor (solution):
 c = np.random.uniform (0, 2)
 T = 1
 Tmin = (1 ** -5)
+c2 = cost (c)
 
 # 5. Generate a new solution with the function neighbor
 
@@ -70,5 +71,5 @@ while T > Tmin :
 			if Eq1 > u:
 				c = Eq1		
 	T = fT * T
-print "Optimal solution :%f" %c
-print "Cost of optimal solution: %f" % Eq1
+print "Optimal solution :%f" % (c)
+print "Cost of optimal solution: %f" % (c2)

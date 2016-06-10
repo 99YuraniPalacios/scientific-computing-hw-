@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 import ModPrimes as Mod
 import mpmath as mp 
 
-n = 100
+n = 200
 x = np.zeros(n, dtype=int)
 y = np.zeros(n, dtype=int)
 for k in range(n):
@@ -33,16 +33,15 @@ plt.show()
 
 # Anadir 2 aproximacion
 
-# from mpmath import mp
+mp.dps = 200
 
-mp.dps = 100
+x2 = np.linspace(2, n, num = 200)
+y2 = mp.li((x1), x, 200)
 
-x2 = lambda ((x1/np.log(x1)), x, 100)
-
-plt.plot(x2,'b', linewidth=4)
+plt.plot(x2,y1,'r', linewidth=4)
 plt.show()
 
-#mp.quad(lambda x: mp.exp(n))
+
 
 
 

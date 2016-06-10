@@ -5,35 +5,36 @@
 # Disenar un algoritmo para factorizar un numero entero en sus factores primos. 
 # (Sugerencia: utilizar el metodo de factorizacion de Euler)
 
-def factorizar(n):
-    #almacenamos los resultados
-    #de la factorizacion en una lista
-    l = []
-    num1 = n
-    #mientras podamos dividir por 2
-    #el dos es un factor
-    while num1 % 2 == 0:
-        l.append(2)
-        num1 /= 2
-    #ahora probamos con los impares
-    #empezando por el 3
-    cuenta = 3
-    raiz = int(math.sqrt(num1))
-    while cuenta <= raiz and num1 > 1:
-        if num1 % cuenta == 0:
-            l.append(cuenta)
-            num1 /= cuenta
-        else:
-            cuenta += 2
-    if num1 > 1:
-        l.append(num1)
-    return l
+def isprime(u):
 
-g = factorizar(34)
-print g
+	h = 0
+	if u == 1:
+		f = 0
 
+	else:
 
+		for k in range(2, u):
+			if u % k == 0:
+				h = 1
+				break
 
+		if h == 1:
+			f = 0
+		else:
+			f = 1
 
+	return f
+
+N = input('Numero Entero = ')
+num = N
+x = 2
+
+while (N !=1):
+	if (N % x == 0):
+		print (str(x))
+		N = N / x
+	else:
+		x = x + 1
+	
 
 

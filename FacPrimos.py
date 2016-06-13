@@ -25,16 +25,37 @@ def isprime(u):
 
 	return f
 
-N = input('Numero Entero = ')
-num = N
-x = 2
+#N = input('Numero Entero = ')
+#num = N
+#x = 2
 
-while (N !=1):
-	if (N % x == 0):
-		print (str(x))
-		N = N / x
-	else:
-		x = x + 1
+#while (N !=1):
+#	if (N % x == 0):
+#		print (str(x))
+#		N = N / x
+#	else:
+# 		x = x + 1
 	
+
+n = input('Numero Entero: ') # Se pide por pantalla que se ingrese el numeo entero.
+
+def factor(n): #funcion que permite hallar y retornar los factores primos
+	l = [] #almacenamos los resultados de la factorizacion en una lista
+	llena = n #Se crea un acumulador
+
+	for i in range(n): #mientras podamos dividir por 2 el dos es un factor, asi que se agrega a la lista.
+		if llena % 2 == 0:
+			l.append(2)
+			llena /= 2
+	impar =  3
+	for j in range(n):  #ahora probamos con los impares, empezando por el 3
+		if llena % impar == 0:
+			l.append(impar)
+			llena /= impar
+		else:
+			impar += 2
+	return l
+
+print factor(n)
 
 

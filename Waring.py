@@ -33,6 +33,8 @@ def isprime(u):
 
 # Program designed to test Waring's conjecture
 
+n = input ('Numero = ')
+
 def waring(n):
 
 	if isprime(n) == 1:
@@ -58,7 +60,7 @@ def waring(n):
 
 	return 0
 
-g = waring(15)
+g = waring(n)
 print g
 
 
